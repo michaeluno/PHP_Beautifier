@@ -1,10 +1,14 @@
 {
-    "name": "clbustos/beautifier",
+    "name": "michaeluno/beautifier",
     "description": "PHP_Beautifier is a Open Source PHP aplication, distributed under the terms of PHP Licence 3.0. This program tries to reformat and beautify PHP 4 and PHP 5 code automatically.",
     "homepage": "https://github.com/clbustos/PHP_Beautifier",
-	"version": "0.1.15",
+	"version": "0.1.17.1",
 	"minimum-stability": "dev",
     "authors": [
+        {
+            "name": "Michael Uno",
+            "email": "michael2@michaeluno.jp"
+        },
         {
             "name": "Claudio Bustos",
             "email": "clbustos@gmail.com"

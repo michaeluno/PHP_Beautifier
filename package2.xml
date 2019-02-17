@@ -17,10 +17,10 @@
   <active>yes</active>
  </lead>
 
- <date>2010-06-04</date>
+ <date>2019-02-17</date>
  <time>16:13:00</time>
  <version>
-  <release>0.1.16</release>
+  <release>0.1.16.2</release>
   <api>0.1.12</api>
  </version>
  <stability>
@@ -29,24 +29,9 @@
  </stability>
  <license uri="http://www.php.net/license">PHP License</license>
  <notes>
-"Jespino: the bug killer" Release
+"michaeluno" Release
 
-- Fixed bug #11245: Lowercase filter prepends the control structure with ugly ' '
-- Fixed bug #13861: Now comments are correctly indented.
-- Fixed bug #14293: Minor typo in documentation (PHP_Beautifier_Filter_Default)
-- Fixed bug #14357: PHP_Beautifier breaks php 5.3 code [needs more testing]
-- Fixed bug #14429: string with two variables in braces and one of them is an array and this string is within a switch statement, then the braces become indented as if they were ending the switch statement (PEAR Filter)
-- Fixed bug #14754: Comment at end of function throws off control sequence
-- Fixed bug #14761: do {} while () syntax messes up control sequence
-- Fixed bug #16197: Now the new filter EqualsAlign do this.
-- Fixed bug #16991: Added the Fluent filter that change the multi-level ac
-- Fixed bug #17278:  	Continue 2; not processed correctly
-- Implement Feature #13601: cannot trivially find the current version [on command line]
-- Implement Feature  #14396: Lowercase filter to handle TRUE and FALSE
-- Fixed the style in long comments begining all lines with "*"
-- Added the new DocBlock filter usign the DocBlockGenerator Pear Library
-- Added t_forach to Default filter. Puts a space after control statement.
-- Changed test suite to work with phpunit
+- Fixed a bug: caused a PHP warning `count()` parameter was not an array in PHP v7.2.
  </notes>
  <contents>
   <dir name="/">
@@ -95,7 +80,7 @@
      <file baseinstalldir="PHP" name="EqualsAlign.filter.php" role="php">
       <tasks:replace from="@package_version@" to="version" type="package-info" />
      </file>
-     
+
      <file baseinstalldir="PHP" name="IndentStyles.filter.php" role="php">
       <tasks:replace from="@package_version@" to="version" type="package-info" />
      </file>
@@ -141,13 +126,13 @@
     <file baseinstalldir="PHP" name="Tokenizer.php" role="php">
      <tasks:replace from="@package_version@" to="version" type="package-info" />
     </file>
-   </dir> 
-   
-   
-   
-   
-   
-   
+   </dir>
+
+
+
+
+
+
    <!-- Beautifier -->
    <dir name="examples">
     <file baseinstalldir="PHP" name="example_array.php" role="doc">
@@ -207,7 +192,7 @@
             <file baseinstalldir="PHP" name="pear_sample_file.phps" role="data" />
         </dir>
     </dir>
-    
+
     </dir>
       <file baseinstalldir="PHP" name="Beautifier.php" role="php">
        <tasks:replace from="@package_version@" to="version" type="package-info" />
